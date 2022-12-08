@@ -1,0 +1,23 @@
+
+.caja {
+    margin: 25px;
+    width: 100px;
+    height: 150px;
+}
+
+.caja img{
+    height: 95%;
+    width: 95%;
+    border:2px solid brown ;
+    object-fit:cover ;
+    object-position: right;
+}
+.caja {
+    flex:1;
+    display: flex;
+
+}
+
+.caja:active{
+    cursor: grab;
+}

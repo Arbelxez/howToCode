@@ -1,0 +1,112 @@
+/*selector {
+    propiedad:valor;
+}*/
+/*contact-form__input--active*/
+/*
+*{
+    padding: 0px;
+    margin: 0px;
+}
+.class{
+    color: black;
+}
+#id_elemento{
+    font-size: 25px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #000;
+    width: 100vw;
+}
+
+.cambio_color:hover{
+    color: blue;
+}
+ h1 {
+    color: green !important
+}
+
+.contact-form__input--active{
+    color: blueviolet;
+}
+.texto{
+    font-size: 5em
+}*/
+h1 {
+    display: inline; /*Cambiar elementos de bloque a linea*/
+}
+h2{
+    height: 30px;  /*tamano de la caja*/
+    width: 180px; 
+    background-color: blue;
+    padding: 0px;
+    box-sizing: border-box;
+    display: inline;
+    margin:0;
+    border-radius: 2em;
+    border: 4px solid green;
+}
+
+/*.caja1{
+    width: 200px;
+    height: 200px;
+    background-color: violet;
+    font-size: 25px;
+    position: relative;
+    opacity: 0.4;
+
+}
+.caja2{
+    width: 200px;
+    height: 200px;
+    background-color: purple;
+    font-size: 25px;
+    position: relative;
+
+}
+.caja3{
+    width: 200px;
+    height: 200px;
+    background-color: pink;
+    font-size: 25px;
+    position: relative;
+
+}
+.caja4{
+    width: 200px;
+    height: 200px;
+    background-color: navajowhite;
+    font-size: 25px;
+    position: relative;
+
+}*/
+div #cajitas{
+    display: block;
+    background-color: green;
+    position: relative;
+}
+
+div div{
+    height: 100;
+    width: 100;
+    background-color: yellow;
+    display: inline;
+}
+.contenedor{
+    position:relative;
+    border: 4px solid red;
+    margin: 50px auto;
+    height: 450px;
+    width: 450px;
+    background-color: green;
+}
+.caja1{
+    left:0;
+}
+.caja2{
+    right: 0;
+}
+.caja3{
+    top:0;
+}
+.caja4{
+    bottom: 0;
+}

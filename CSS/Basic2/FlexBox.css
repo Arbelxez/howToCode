@@ -1,0 +1,23 @@
+.flex-container{
+    display: flex;
+    height: 100vh;
+    flex-wrap: wrap;
+}
+
+.flex-item{
+    background: blue;
+    padding: 10px ;
+    margin: 5px;
+    min-width: 200px;
+    height: 100px;
+}
+.orange{
+    background: orange;
+    flex-grow: 1;
+    order:10;
+}
+.green{
+    background: green;
+    flex-grow: 1;
+    order:5; 
+}

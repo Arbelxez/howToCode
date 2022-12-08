@@ -1,0 +1,93 @@
+*{
+    font-size: 30px;
+}
+
+form{
+    margin:100px auto;
+    display: block;
+    background-color: grey;
+    padding: 20px;
+    width: 50%;
+}
+input{
+    padding: 6px;
+    width: 100%;
+}
+
+input::placeholder{
+    color: white;
+    background-color: blueviolet;
+}
+
+input::selection{
+    color:white;
+    background-color: black;
+} /*para lo que resaltas con el mause*/
+
+b::before{
+    content:"Fui a cagar ";
+    color:blue;
+}
+
+b::after{
+    content:" el cagadero";
+    color:red;
+}
+
+.caja1 {
+    height: 200px;
+    width: 200px;
+    background: lightblue;
+    transition: backgroud 1s, height 1s, width 1s; /*all 1s*/
+    margin-left: 100px;
+    margin-bottom: 100px;
+
+}
+
+.caja1:hover{
+    background-color: aqua;
+    height: 250px;
+    width: 250px;
+}
+
+*:link{
+    color:red;
+}
+*:visited{
+    color: black;
+    text-decoration:line-through;
+
+}
+.active{
+    width:250px ;
+    height: 250px;
+    background-color: red;
+    margin: 100px;
+    transition: all 1s;
+}
+.active:active{
+    background:green;
+    width:300px ;
+    height: 300px;
+
+}
+.form{
+    width: 500px;
+    height: 60px;
+    background-color: grey;
+    margin: 100px;
+    transition: all 0.5s;
+}
+
+.form:focus{
+    width: 550px; 
+    height: 66px;
+    color :white;
+    background-color: black;
+}
+
+.lang b:lang(es){
+    background: red;
+    color:white;
+    border: 3px;
+}
