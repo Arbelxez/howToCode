@@ -77,7 +77,6 @@ ${celular5.infoAltaGama()} <br>
 
 
 
-
 /**celular1.presionarBotonEncendido()
 celular1.tomarFotos()
 celular1.grabarVideo()
