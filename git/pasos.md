@@ -34,6 +34,8 @@
 
 * Vincular a gitHub con nuevo repositorio
 
+* Git push -u origin MASTER    !!!!
+
 ## 7 - SEPTIMO
 
 * Cargar a la nuve 
