@@ -560,4 +560,142 @@ resultado = ["Samuel"]
 ~~~
 * ### METODOS DE REPETICION
 * #### FILTER()
-* #### FOREACH
+*Sirve para recorrer la lista tomando los valores de cada posicion del array*
+~~~ js
+let listado = ["abecedario", "manzana", "pedro", "dedo", "bobo", "pedro"]
+
+resultado = numero.filter(numero => numero.length > 4)
+
+resultado = ["abecedario","manzana", "pedro","pedro"]
+~~~
+* #### FOREACH ()
+*Nos permite lo mismo que el filter(), pero podemos agregar condiciones*
+~~~ js
+let listado = ["abecedario", "manzana", "pedro", "dedo", "bobo", "pedro"]
+
+listado.forEach(numero => document.write(numero + "<br>"))
+
+/**"abecedario
+ * manzana
+ * pedro
+ * pedro"*/
+~~~
+## OBJETO MATH
+### METODOS
+* #### SQRT( )
+*Nos devuelve la raiz cuadrada*
+~~~ js
+raiz = Marh.sqrt(25)
+
+raiz = 5
+~~~
+* #### CBRT( )
+*Nos devuelve la raiz cubica*
+~~~ js
+raiz = Math.cbrt(125)
+
+raiz = 5
+~~~
+* #### MAX( )
+*Nos devuelve el valor maximo de una lista de numeros*
+~~~ js
+numero = Math.max(1,,5,6,76,23,67,234,2354,567)
+
+numero = 2354
+~~~
+* #### MIN( )
+*Nos devuelve el valor minimo de una lista de numeros*
+~~~ js
+numero = Math.min(1,5,6,76,23,67,234,2354,567)
+
+numero = 1
+~~~
+* #### RANDOM( )
+*Nos devuelve un numero aleatorio en 0 y 1*
+~~~ js
+numeroAleatorio = Math.random()
+
+numeroAleatorio = 0.156363
+~~~
+
+* #### RAUND( )
+*Reondea el valor al entero mas cercano*
+~~~ js
+let numero = Math.random()*100
+
+numero = Math.round(numero)
+
+numero = 87
+~~~
+* #### FLOOR( )
+*Quita la parte decimal del numero*
+let numero = Math.random()*100
+~~~ js
+numero = Math.floor(4.99999999)
+
+numero = 4
+~~~
+### PROPIEDADES
+* #### PI
+*Da el valor de PI*
+~~~ js
+PI = Math.PI
+
+PI = 3.1415...
+~~~
+* #### SQRT1_2
+*Da el valor de raiz de 1/2*
+~~~ js
+let numero = Math.SQRT1_2
+
+numero = 0.707106...
+~~~
+* #### SQRT2
+*Da el valor de la raiz cuadra de 2*
+~~~ js
+let numero = Math.SQRT2
+
+numero = 1.41421...
+~~~
+* #### E
+*Constatnte de Euler*
+~~~ js
+const Euler = Math.E
+
+Euler = 2.718...
+~~~
+* #### LN2 
+*Logaritmo natural de 2*
+~~~ js
+const numero = Math.LN2
+
+numero = 0.69314...
+~~~
+* #### LOG2E
+*Logaritmo de E en base 2*
+~~~ js
+numero = Math.LOG2E
+
+numero = 1.4426...
+~~~
+* #### LOG10E
+*Logaritmo de E en base 10*
+~~~ js
+numero = Math.LOG10E
+
+numero = 0.4342944...
+~~~
+* ## CONSOLE
+* ### ERROR( )
+*Muestra mensaje de error en la consola*
+* ### INFO( )
+*Muestra mensaje informativo en la consola*
+* ### WARN( )
+*Muestra un mensaje de adbertencia en la consola*
+* ### TEMPORIZADORES
+* #### TIME( )
+*Inicia el temporizador*
+* #### TIMELOG( )
+*Registra el valor actual del remporizador*
+* #### TIMEEND( )
+*Finaliza el conteo*

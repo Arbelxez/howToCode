@@ -319,7 +319,7 @@ for (animal in animales){
  *Nos devuelve el contenido de la posicion*
  ~~~ js
  let animales = ["gato","perro","pajaro"]
-for (animal in animales){
+for (animal of animales){
     document.write(animal)
 }
 /**gato,perro,pajaro*/
