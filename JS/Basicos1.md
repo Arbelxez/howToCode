@@ -1,6 +1,4 @@
-# CONCEPTOS BASICOS JS
-
-## TIPOS DE VARIABLES
+# TIPOS DE VARIABLES
 
 ~~~ js
 let String = "cadena de texto";
@@ -14,32 +12,32 @@ let Number = 44;
 let Boolean = False;
 ~~~
 
-##  SCOPE
+#  SCOPE
 Formas de declarar una variable (Las variables solo se declaran una vez)
 
-* ### CONST 
+* ## CONST 
 La variable nunca cambiara de valor
 ~~~ js
 const pi = 3.14;
 ~~~
-* ### VAR
+* ## VAR
 La variable tendra ese valor dentro de todos los bloques
 ~~~ js
 var edad = 23;
 ~~~
-* ### LET
+* ## LET
 La variable tendra ese valor solo para el bloque en el que fue declarada
 ~~~ js
 let i = 0;
 ~~~
 
-## PROMPT
+# PROMPT
 Abre un escapacio para que el usuario ingrese una cadena de texto
 ~~~ js
 let edad = prompt('Ingrese su edad');
 ~~~
 
- ## OPERADORES
+# OPERADORES
  ~~~ js
  x = x + y;
  ~~~
@@ -47,23 +45,22 @@ let edad = prompt('Ingrese su edad');
  ~~~ js
  x += y;
  ~~~
-**Aplica para todas las operaciones**
-
-## OPERADORES ARITMETICOS
+*Aplica para todas las operaciones*
+* ## OPERADORES ARITMETICOS
 * ### ADICION
 ~~~ js
 let numero = 10;
 resultado = numero--;
 resultado = 9;
 ~~~
-* ## SUSTRACCION
+* ### SUSTRACCION
 ~~~ js
 let numero = 10;
 resultado = numero++;
 resultado = 11;
 ~~~
 
-## CONCATENACION
+### CONCATENACION
 
 Se unen cadenas de texto o numericas
 ~~~ js
@@ -83,7 +80,7 @@ frase = "" + numero + numero2;
 frase = 58;
 ~~~
 
-* **Otra forma de concatenar**
+*Otra forma de concatenar*
 ~~~ js
 nombre = "Samuel";
 frase = `Soy ${nombre} y estoy caminando`;
@@ -169,9 +166,9 @@ let valor = false
 let resultado = ! valor;
 resultado = True
 ~~~
-## CONDICIONALES
+# CONDICIONALES
 *Permite ejecutar fragmentos de codigo solo si una condicion se cumple*
-* ### IF
+* ## IF
 *Si se cumple se ejecuta el fragmento*
 ~~~ js
 if (10 > 15) {
@@ -180,7 +177,7 @@ if (10 > 15) {
 /** No se ejecuta porque 10 no es mayor que 15*/
 
 ~~~
-* ### ELSE IF
+* ## ELSE IF
 *Si no se cumple el primer if pasa al else if para ver si es verdadero*
 ~~~ js
 let nombre = "Samuel"
@@ -193,7 +190,7 @@ else if (nombre == "Samuel"){
 } 
 /** Como el primer if no se cumple pasa a revisar el else if, como si se cumple se ejecuta ese fragmento*/
 ~~~
-* ### ELSE
+* ## ELSE
 *Si nada de lo anterior se cumplio este se ejecuta*
 ~~~ js
 let nombre = "Juan"
@@ -209,7 +206,7 @@ else {
 }
 /** Como ningun if era verdadero se ejecuta el else*/
 ~~~
-## ARRAYS O LISTAS
+# ARRAYS O LISTAS
 *Variable que almacena varios tipos de datos*
 ~~~ js
 let datos = ["Samuel", "Arbelaez", 17, "Rionegro"]
@@ -217,7 +214,7 @@ document.write(datos[0])
 
 /** Se mostria en pantalla "Samuel" porque es el primer elemento de la lista*/
 ~~~
-* ### ARRAYS ASOCIATIVOS
+* ## ARRAYS ASOCIATIVOS
 *Se les dan nombres a las posiciones*
 ~~~ js
 let datos = {
@@ -230,10 +227,10 @@ documet.write(datos["nombre"])
 
 /** Nos da el valor asociado a nombre, en este caso "Samuel" porque asi fue que lo definimos*/
 ~~~
-## BUCLES
+# BUCLES
 *Los bucles se repiten constantemente mientras la condicion se cumpla*
 
- * ### WHILE
+* ## WHILE
  *Se ejecuta hasta que la condicion se deje de cumplir*
  ~~~ js
  while (numero < 10){
@@ -243,7 +240,7 @@ documet.write(datos["nombre"])
 
  /** Se va a ejecutar hasta que el incremento haga numero sea mayor que 10*/
  ~~~
- * ### DO WHILE
+* ## DO WHILE
  *Primero se ejecuta la accion y luego se comprueba el ciclo*
  ~~~ js
  let numero = 0;
@@ -256,7 +253,7 @@ documet.write(datos["nombre"])
 
  /** Numero no es mayor que 5 pero como el do esta antes este se ejecuta*/
  ~~~
- * ### BREAK
+* ## BREAK
  *El break termina la sentencia*
  ~~~ js
  let numero = 0
@@ -270,7 +267,7 @@ documet.write(datos["nombre"])
 
  /** Cuando se llegue a cierto valor, o se cumpla una condicion el ciclo se apaga*/
  ~~~
- * ### CONTINUE
+* ## CONTINUE
  *Cuando se cumpla la condicion se salta el codigo que sigue*
  ~~~ js
 for(let i = 0; i < 20; i++){
@@ -282,7 +279,7 @@ for(let i = 0; i < 20; i++){
 /**Cuando i sea igual a 12 se va a ejecutar el continue y se va a saltar el document.write() */
 ~~~
 
- * ### FOR
+* ## FOR
  *Es un bluce finito en el que especificamos cuantas vueltas va a dar*
  ~~~ js
  for (let i = 0; i > 6; i++ ){
@@ -298,7 +295,7 @@ Se especifica si es aumento o decremento
  */
  ~~~
 
- * ### FOR IN
+* ## FOR IN
  *Nos devuelve la pisicion en la lista*
  ~~~ js
  let animales = ["gato","perro","pajaro"]
@@ -315,7 +312,7 @@ for (animal in animales){
 /**gato,perro,pajaro*/
 
  ~~~
- * ### FOR OF
+* ## FOR OF
  *Nos devuelve el contenido de la posicion*
  ~~~ js
  let animales = ["gato","perro","pajaro"]
@@ -324,7 +321,7 @@ for (animal of animales){
 }
 /**gato,perro,pajaro*/
  ~~~
- * ### LABEL
+* ## LABEL
  *Permite asociar un bucle a un nombre*
 ~~~ js
 let array1 = ["Samuel","Daniel", "Clara", "Thomas", "Paulina"]
@@ -340,7 +337,7 @@ for (let array in array2){
 }
 /** Asocia el bucle a un nombre y permite saltar el bucle completo */
 ~~~
-## FUNCIONES
+# FUNCIONES
 *Una porcion de codigo asociado a un nombre para poder reutilizarlo*
 ~~~ js
 function saludar(){
@@ -360,7 +357,7 @@ saludar()
 
 /** Se ejecutara el codigo el numero de veces que invoquemos la funcion*/
 ~~~
-* ### RETURN
+* ## RETURN
 *Finaliza la ejecución de la función y especifica un valor para ser devuelto a quien llama a la función*
 ~~~ js
 function saludar(){
@@ -382,7 +379,7 @@ const saludar = (nombre)=>{
     document.write(frase)
 }
 ~~~
-## PARAMETROS
+# PARAMETROS
 *Permie variar el uso de las funciones*
 
 ~~~ js

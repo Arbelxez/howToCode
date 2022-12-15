@@ -261,5 +261,208 @@ contenedor = document.querySelector(".contenedor")
 
 item = document.creatElement("LI")
 ~~~
+* ## CREATEDOCUMENTFRAGMENT( )
+*Crea un fragmento en el que se almacena informacion para luego ingresarla toda al mismo tiempo*
+~~~ html
+<div class="contenedor"></div>
+~~~
+~~~ js
+contenedor = document.querySelector(".contenedor")
+
+fragmento = document.createDocumentFragment()
+
+for(i=0, i<20, i++){
+    item = document.createElement("Li")
+    item.innerHTML = "Este es un item de la lista"
+    fragmento.appendChild(item)
+}
+contenedor.appendChild(gramento)
+~~~
+# OBTENCION Y MODIFICACION DE CHILDS
+* ## FIRSTELEMENTCHILD
+~~~ html
+<div class="contenedor">
+    <h2>un titulo comun</h2>
+    <h4>un subtitulo de chill</h4>
+    <p>un parrafo normal</p>
+</div>
+~~~
+~~~ js
+contenedor = document.querySelector(".contenedor")
+
+primerHijo = contenedor.firstElementChild
+
+primerHijo =  "<h2>un titulo comun</h2>"
+
+~~~
+* ## LASTELEMENTCHILD
+~~~ html
+<div class="contenedor">
+    <h2>un titulo comun</h2>
+    <h4>un subtitulo de chill</h4>
+    <p>un parrafo normal</p>
+</div>
+~~~
+~~~ js
+contenedor = document.querySelector(".contenedor")
+
+ultimoHijo = contenedor.lastElementChild
+
+ultimoHijo = "<p>un parrafo normal</p>"
+~~~
+* ## CHILDREN 
+~~~ html
+<div class="contenedor">
+    <h2>un titulo comun</h2>
+    <h4>un subtitulo de chill</h4>
+    <p>un parrafo normal</p>
+</div>
+~~~
+~~~ js
+contenedor = document.querySelector(".contenedor")
+
+hijos = contenedor.children
+
+hijos =     
+    <h2>un titulo comun</h2>
+    <h4>un subtitulo de chill</h4>
+    <p>un parrafo normal</p>
+~~~
 # METODOS DE CHILDS
-* ## APPENCHILD
+* ## APPENCHILD( )
+*Sirve para insertar elementos como hijos de otros*
+~~~ html
+<div class="contenedor"></div>
+~~~
+~~~ js
+contenedor = document.querySelector(".contenedor")
+
+item = document.creatElement("LI")
+
+textDelItem = document.createTextNode("Este es un item de la lista")
+
+item.appendChild(textDelItem)
+
+contenedor.appendChild(item)
+~~~
+~~~ html
+<div class = "contenedor">
+    <li>Este es un item de la lista</li>
+</div>
+~~~
+* ## REPLACECHILD( )
+~~~ html
+<div class="contenedor">
+    <h2 class="h2">un titulo comun</h2>
+    <h4>un subtitulo de chill</h4>
+    <p>un parrafo normal</p>
+</div>
+~~~
+~~~ js
+contenedor = document.querySelector(".contenedor")
+
+parrafo = document.creatElement("P").innerHTML = "parrafo"
+h2_nuevo = document.creatElement("H2")
+
+h2_nuevo.innerHTML= "titulo"
+
+h2_viejo = document.querySelector(".h2")
+
+contenedor.replaceChild(h2_nuevo,h2_antiguo )
+~~~
+
+* ## REMOVECHILD( )
+~~~ html
+<div class="contenedor">
+    <h2 class="h2">un titulo comun</h2>
+    <h4>un subtitulo de chill</h4>
+    <p>un parrafo normal</p>
+</div>
+~~~
+~~~ js
+contenedor = document.querySelector(".contenedor")
+
+h2_viejo = document.querySelector(".h2")
+
+contenedor.removeChild(h2_viejo)
+~~~
+* ## HASCHILDNODE( )
+*Para verificar si un elemento tiene un elemento hijo o no*
+~~~ html
+<div class="contenedor">
+    <h2 class="h2">un titulo comun</h2>
+    <h4>un subtitulo de chill</h4>
+    <p>un parrafo normal</p>
+</div>
+~~~
+~~~ js
+contenedor = document.querySelector(".contenedor")
+
+respuesta = contenedor.hasChildNodes()
+
+respuesta= true
+~~~
+# PROPIEDADES DE PADRES
+* ## PARENTELEMENT - PARENTNODE
+**
+~~~ html
+<div class="contenedor">
+    <h2 class="h2">un titulo comun</h2>
+    <h4>un subtitulo de chill</h4>
+    <p>un parrafo normal</p>
+</div>
+~~~
+~~~ js
+h2_viejo = document.querySelector(".h2")
+
+respuesta = h2_antiguo.parentElement
+
+respuesta = <div class="contenedor"><div>
+~~~
+# PROPIEDADES DE HERMANOS
+* ## NEXTELEMENTSIBLING
+~~~ html
+<div class="contenedor">
+    <h2 class="h2">un titulo comun</h2>
+    <h4 class = "h4">un subtitulo de chill</h4>
+    <p>un parrafo normal</p>
+</div>
+~~~
+~~~ js
+hermano2 = document.querySelector(".h4")
+
+hermano3 = hermano2.nextElementSibling
+
+hermano3 =     <p>un parrafo normal</p>
+~~~
+* ## PREVIOUSELEMENTSIBLING
+~~~ html
+<div class="contenedor">
+    <h2 class="h2">un titulo comun</h2>
+    <h4 class = "h4">un subtitulo de chill</h4>
+    <p>un parrafo normal</p>
+</div>
+~~~
+~~~ js
+hermano2 = document.querySelector(".h4")
+
+hermano1 = hermano2.previousElementSibling
+
+hermano1 =  <h2 class="h2">un titulo comun</h2>
+~~~
+# NODOS EXTRAS
+* ## CLOSEST( )
+*Nos devuelve el elemento mas cercano que tenga cierca clase*
+~~~ html
+<div class="div">
+    <div class="div">
+        <div class="div-2"></div>
+    </div>
+</div>
+~~~
+~~~ js
+div = document.querySelector(".div-2")
+
+x = div.closest(".div")
+x = <div class="div"></div> /**Nos devuelve el div con clase div mas cercano*/
+~~~
